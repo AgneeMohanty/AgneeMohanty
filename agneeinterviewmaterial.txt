@@ -1,0 +1,206 @@
+Normal voice, chill attitude, weared out attitude and calm smile but good posture.
+Use middle volume voice not too loud or entirely chill
+Take pen and paper with resume .
+Draw diagrams and ven diagrams and write functions and methods to explain concepts to the interviewer that you have a clear understanding of and concepts which are hard to explain.
+doing only hand movements is difficult , so combine hand and facial expressions, writing on paper and giving examples for a complete soft skill.
+I am Agnee Mohanty.I was born and brought up in Cuttack, a city famous for brotherhood and unity ,I did my schooling from there itself.Currently I am in Bhubaneswar pursuing  B. Tech at ITER University to which I attribute my skills in computer science.Most importantly it has taught me a lot about myself and my relationship with others around me. Being a pretty decent scorer throughout my academic career I have always had a knack for learning and evolving my skills. I consider fitness as an essential part of keeping the mind and body healthy. Despite increasing academic pressure , I have proudly kept up with my routine workouts and outdoor activities. During my free time I love reading books as I feel that books are what make me truly rich as a person. I have always believed in creating a non-competitive and rather supportive work environment for collective growth and progress, be it games,group presentations or academic learning. I feel that by taking a pause and helping others catch up, we can progress together and build an unbreakable workforce.
+Currently I am working on  data science and machiene learning.
+-----------------------------------
+* Give an example of how you step out of your comfort zone
+I feel that it  is real hard to step out of your comfort zone, and that is why i love to do it. Now only I am working on some college training programs as well as online ones , so I dont really have time to look into anything else, but when i came across a weekly webinar being conducted by KPIT for improving your coding in C, I immediately registered and started cramming it into my schedule, even though it resulted in a few extra work hours, I felt that it was something that would upgrade my skills, so I went for it.
+ Same about my fitness routine, sometimes with exams and training programs it just feels impossible to give any time for exercising, but I always ensure that I give at least 30 minutes daily to stay fit. 
+I believe that these few years of our life are the most valuable and we need to make the most out of them even though sometimes we have to step outside of our comfort zone.
+----------------
+Analytical and critical thinking skills-. During projects I have always played the role of promptly finding the solution to any problem.I also make it a habit to practice solving atleast 1 code daily to keep my problem solving skills sharp
+--------------------------
+* how do you remember all syntaxes of data science?
+Yes, I do face a lot of different problems in projects , but like our instructor says I can always resolve it using documentation and a bit of research ,sometimes new updates dont go with new models , so unexpected errors are there . sometimes that one data is there in some  format thats causing a problem but you cant find it,and mostly syntax related information you have to search up constantly its simply too difficult to remember all those different functions and methods.
+
+* Issues faced during project
+One time I was using the Random Forest Regressor model to predict the price of construction equipment(yes it was bulldozers or something) , and in that the model continuously showed the error NaN values in X, the y was SalePrice column and X was  all the independent variables or columns .Prior to that I had already removed all null values, added missing numerical values , added categorical values and even the categorical values were in numerical form,so the entire data was ready to be fitted on. SO i searched it up and did a bit of research, turned out it was a bug in some regressor models and a lot of people faced the same issue, after trying 2-3 solutions I was able to remove the error and proceed.
+Continuous learning and growth - Recently I learned that companies were preferring cloud skills so i immediately asked my friends to suggest me a yt channel and started learning cloud, When I was suggested by one of my cousin brother and my father who has a data based role, to take data science as a specialisation , I took up an udemy course and started acquiring relevant skillsets.Then I also took a data science training program at college, so these past few months have been a period of constant learning and growth.
+In  most projects we see that instead of test_train split we directly start the fitting the model to x and y of train . This is because the train, test and val files are already given . We just have to choose the x and y in the train, unlike the previous case where everything was just one big file , so we had split some data into train, some to val and some to test.
+
+*How useful is presentation in data science?
+ We should always use plots to show relationsip between important values in the data set. we may not understand every technical aspect but it is very useful to the client. For example here we find that the lesser the price of construction material ,more it was sold. This might be of some value to those who research on the sales and price of construction materials. ALso in the heartdisease dataset, we inferred that the more cases of chest_pain there was , the more chances of heart_disease was there. similar co-relations in the age and activity level can also be found which can be very useful to a subject expert or a doctor.
+++++++++++++++++
+*How do you solve your doubts in data science?
+mostly we can just use the internet to do a bit of research.
+
+* How do you choose a particular model?
+We have a roadmap or flow chart on the scikit learn website that guides us on how to choose the perfect regression /classification model based on the data that we have. Apart from that it is always a safe practice to try between various models to find the best one.
+*You have worked on data science ?can you work on anything the company needs?
+ I agree that I have an interest in data science, but no matter how many courses we do,its all just top of the iceberg. What really matters is if you are open and ready to learn the industry requisite skills that the company wishes to trains you in. So at the end of the day you need to take interest in continuous learning in order to excel.
+-----------------
+*Have all these data science courses helped you?
+Ive spent some quite some time and done about 3-4 courses on data science, and I will say that YEs , every single one of them has helped me, the first one I did was ZTM by Andrew and Daniel, even though I knew very few about datascience back then and it basically felt like a follow along course , it provided the basic framework for my understanding , and with repeatition of the same python concepts again and again, I have been able to learn them thoroughly. Then again ,some courses miss out one part while the other courses covered it. 
+* Any challenges you faced in data science projects?
+One time while doing a project , the model was overperforming as  such a high  prediction score was not practically possible ,but no matter how much I searched I could not find problem in the code. after a lot of brain storming I spotted that there were a lot of missing and non numerical values in the data. and I had filled them using median, mean etc. But the problem was these mean and median had been derived from the entire data, that is from the validation and test set as well. The correct process would have been to fill the missing values after splitting the data. Then the values filled would be based on training set only. similarly we would have to fill test set and validation set separately.
+
+Like Ive heard from a lot of instructors and in my opinion too a large part of datascience is a search and find task. YOu just cant remember all the syntaxes, functions, methods ,train ,test, . this goes for  the algorithm or mathematical concepts behind models, and the core concepts or work flow and the storytelling or presentation part. That is cleaning the model, splitting into train and test, fitting the model , the logic behind k nearest points or k cluster etc. But a good data scientist must be ready to work on the data and must take pleasure in visualising it to the client . 
+
+X Speak powerfully but in low casual volume not in booming voice
+also not in slow speed that seems like mug up, speak at normal fast pace except when you need to think of ideas and situations for specific questions
+Remember to smile ,your face becomes serious when you speak
+*How have books helped you?
+Books provide countless lessons through the decisions thoughts and tales of various kinds of characters. it is as good as having a firsthand experience of someone elses life 
+Gita- Sarva dharman parityajya mam ekam saranam vraja, aham twam sarva papebhyo mokshayisyami ma sucah
+Abandon all varieties of activities and surrender unto me alone, I shall destroy all your sins and grant you salvation
+
+
+RESUME MATERIAL
+
+Unbreakable workforce:
+I posess great teambuilding and coordination skills . Starting from the problem solving sessions during my board exam days or school projects and even class quizes in my years at ITER I always take it as a responsibility to ensure that everyone is involved and learning. 
+During my school days I used to participate in  multiple projects showcasing especially team coordination,information gathering and presentation skills
+It was my job most of the time to ensure that instead of just rushing head-on into the project the work must be smartly divided and the goals and to dos to be noted down . It was then a lot easier to accomplish the project systematically and precisely. Starting from the problem solving sessions during my board exam days or school projects and class quizes in my years at ITER I have always taken it as a responsibility that everyone is involved and learning. 
+
+*Are you a hard worker?
+ I must admit that I enjoy working hard,working with attention , to reach that bit when everything else in the background just blurs out. It has been  quite a useful trait both in my fitness journey as well as academics . A friend of mine once remarked about my consistency : I am fired by motivation but what drives you is discipline. I believe that motivation is just a spark. Building discipline is more important.
+also mention school projects work management
+
+
+*Knack for learning and evolving skills
+When I got into ITER coding was something new to me, some of our friends had computer programming as a subject back in 12 th so they were a lot ahead of us. Since coding was everything now, i refused to fall behind and started learning coding myself from youtube channels and websites.
+Also I had a lot of stage fear initially and used to get panic attacks before speeches and presentation. I started practicing infront of the mirror, reading books and basically upgrading myself to hone my communication skills.
+I realised that I was really bad at typing during my first year at ITER , and this was quite problematic as from taking notes to programming practically everything required typing fast . I immediately consulted my friends and began to practice typing on touchtype website. To be honest it was one of the most frustating and patience-testing work,there were tests that i had to try for 20 times before meeting the speed or accuracy limit. but I consistently kept at it and successfuly transformed myself from a 13 words per minute to a 50 words per minute typist.
+
+*Adaptability : be ready to give examples of whatever qualities you mention in skills
+give typing practice example of over 89 hours ,checking exact time from website to show your determination stating that you never had much practice in formal typing on laptops and when you realised that practically everything requires typing you set your mind to it. overcoming a lot of frustation  and patience you finally got from 15 to 40 wpm withn a month
+
+//in later presentations i have always prepared my parts in advance and gone out of my way to learn some important information about every aspect of the topic so that i can always handle similar disasters.
+*When you had to change your plans last moment?
+It was once when me and my friends had taken part in a science project, the topic of the project was biogas production , but on the last night before the presentation our mentor notified us that we would have to change the topic to natural methods of water filtration.
+Refresh whatever you have learnt in web development and summarize
+*What did you learn from MMA?
+Under MMA we train mostly for endurance ,skill, and even strength. But most important aspect of the training is that it starts where the body refuses to go on. So basically at that point we train the mind to keep going even when the body is exhausted , a point beyond reason and beyond practicality. Its just you and your pain and willpower. it becomes more like meditation and hardwiring of the mind.
+
+
+when i started learning data science, I thought that training and testing models was all, but then i learned that machine learning mainly consisted of the mathematical algorithms behind the models, so currently I am planning on working on that but now first I will complete deep learning . 
+I have been working on this course for about 2 months and it is true that i have gained proficiency in the classification and regression part and am also able to get a hold on the deep learning part because the model training part is quite similar but there is still a lot to learn.
+Sir ,My career vision is to continuously learn and upgrade myself, no matter where I am or what skill I am learning,and since your company has continuous learning as a moto I think our goals align very much together.
+*What are your strengths?
+I possess great teambuilding and coordination skills.
+I love to continuously upgrade myself
+
+*What are your weaknesses?
+I consider my weaknesses as areas of improvement.
+I sometimes may give more than required attention to detail
+I find it difficult to progress forward knowing that my colleague or teammate is lagging behind or facing some kind of difficulty. 
+
+*How well do you handle pressure?
+I had the issue of getting panick and nervous attacks before every important stage presentation, many of my classmates used to avoid such soft skill classes because of fear of speaking, but I would always gather up my courage and go make my stand, gradually my fear vanished and today Im  a confident speaker.
+Agnee@77499
+
+*What is God according to you?
+God is something higher ,something greater than all of us. I believe that By believing and having faith in some way that there exists something greater than you and me, our work our life that guides everything in the universe, we can find the true purpose of our life.
+
+*Why minfire?why deloitte?
+Sir my only career vision is constant learning and growth.I also believe in a work hard play hard mindset. So, I think my goals and visions clearly align with your company. Thats why i would choose Mindifire
+*where do you see yourself in 5 years?
+in 5 years I see myself as an upgraded version of what I am now.I dont know the domain but Im sure I would have learnt a great deal by then.
+*Why should we hire you?
+Sir I believe my communicatin skills,collaboration and team building skills along with my attitude to keep learning will be of great help to your company.
+
+For Group Discussion Intro:
+Good Morning Panel ! Good Morning friends! I am Agnee Mohanty. Today,We are having a group discussion and the agenda is "Whether man can overtake machine". I believe It would be a precise and fruitful discussion if we try to engage on the following key points- Advantages,Disadvantages,Outcomes, Ethical considerations,and finally but most importantly a conclusion. In my opinion Man can always overtake machine , no matter how ll machine always has its limits,.I invite my friends to contribute their insights on this matter.
+
+
+Data Preprocessing
+It involves below steps:
+Getting the dataset
+Importing libraries
+Importing datasets
+Finding Missing Data
+Encoding Categorical Data
+Splitting dataset into training and test set
+Feature scaling
+Dummy variables are those variables which have values 0 or 1. The 1 value gives the presence of that variable in a particular column, and rest variables become 0. With dummy encoding, we will have a number of columns equal to the number of categories.
+
+In our dataset, we have 3 categories so it will produce three columns having 0 and 1 values. For Dummy Encoding, we will use OneHotEncoder class of preprocessing library.
+
+#for Country Variable  
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder  
+label_encoder_x= LabelEncoder()  
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])  
+#Encoding for dummy variables  
+onehot_encoder= OneHotEncoder(categorical_features= [0])    
+x= onehot_encoder.fit_transform(x).toarray() 
+
+For feature scaling, we will import StandardScaler class of sklearn.preprocessing library as:
+
+from sklearn.preprocessing import StandardScaler  
+Now, we will create the object of StandardScaler class for independent variables or features. And then we will fit and transform the training dataset.
+
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+For test dataset, we will directly apply transform() function instead of fit_transform() because it is already done in training set.
+
+x_test= st_x.transform(x_test)  
+
+similarly sarch up syntax for normalisation
+
+1. Inner Join
+When to Use: Use Inner Join when you only want to return rows that have matching values in both tables.
+Example Use Case: If you have a table of orders and a table of customers and you want to get the details of only those customers who have placed an order, an inner join would be appropriate.
+Query:
+sql
+Copy code
+SELECT orders.order_id, customers.customer_name
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.customer_id;
+2. Left (Outer) Join
+When to Use: Use Left Join (or Left Outer Join) when you want to return all rows from the left table, even if there are no matches in the right table. Rows from the right table that don't have a match will return NULL for those columns.
+Example Use Case: If you want to get all customers, even those who haven't placed an order, you'd use a left join.
+Query:
+sql
+Copy code
+SELECT customers.customer_name, orders.order_id
+FROM customers
+LEFT JOIN orders ON customers.customer_id = orders.customer_id;
+3. Right (Outer) Join
+When to Use: Use Right Join (or Right Outer Join) when you want to return all rows from the right table, even if there are no matches in the left table. Rows from the left table that don't have a match will return NULL.
+Example Use Case: If you want to get all orders, even if they don t have a customer assigned, you'd use a right join.
+Query:
+sql
+Copy code
+SELECT customers.customer_name, orders.order_id
+FROM orders
+RIGHT JOIN customers ON orders.customer_id = customers.customer_id;
+4. Full (Outer) Join
+When to Use: Use Full Join (or Full Outer Join) when you want to return all rows from both tables, with NULL values where there are no matches on either side.
+Example Use Case: If you want to get a list of all customers and all orders, even if some orders don t have customers and some customers haven t placed orders, you'd use a full join.
+Query:
+sql
+Copy code
+SELECT customers.customer_name, orders.order_id
+FROM customers
+FULL OUTER JOIN orders ON customers.customer_id = orders.customer_id;
+5. Cross Join
+When to Use: Use Cross Join when you want to return a Cartesian product of the two tables, i.e., every combination of rows between the two tables.
+Example Use Case: If you have a table of products and another table of promotions and you want to generate a list of all possible product-promotion combinations, a cross join would be appropriate.
+Query:
+sql
+Copy code
+SELECT products.product_name, promotions.promotion_name
+FROM products
+CROSS JOIN promotions;
+6. Self Join
+When to Use: Use Self Join when you need to join a table to itself. This is helpful when the table contains hierarchical data.
+Example Use Case: If you have an employees table with a manager_id column referring to the employee_id of the employee s manager, you can use a self join to list employees along with their manager's names.
+Query:
+sql
+Copy code
+SELECT e1.employee_name AS Employee, e2.employee_name AS Manager
+FROM employees e1
+LEFT JOIN employees e2 ON e1.manager_id = e2.employee_id;
+Summary
+Inner Join: Use when you want records with matching keys in both tables.
+Left Join: Use when you want all records from the left table and only matching records from the right table.
+Right Join: Use when you want all records from the right table and only matching records from the left table.
+Full Join: Use when you want all records when there is a match in either table.
+Cross Join: Use when you want every possible combination of records.
+Self Join: Use when you need to join a table to itself, often for hierarchical or recursive data.
+java collections: collections consists of framework for storing a collection of objects, arraylist,hashmap,hashedlinked list ,treemap.Some are ordered, some are unordered , some allow null values, some dont,some only take unique values while some dont.
+current= current.next #Takes current pointer to the next place
+current.next = next #points the current node to node pointed by next

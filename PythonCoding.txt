@@ -1,0 +1,136 @@
+Hashsets can be defined using set()
+allow only unique elements
+No Indexing: Since sets are unordered, they do not support indexing, slicing, or other sequence-like behaviors.
+_________________
+in questions where you feel that deleting some elements are needed better to create an empty string/list and add only the required elements to it instead of deleting unnecessary elements
+------------------------
+you can use append in case of list, but in case of string you can do 
+for i in lst:
+	str+=i
+-----------------
+Continue moves on to the next iteration of the loop without executing remaining statements
+------------------------
+
+All 3 possible combinations of an array can be found using 3 loops.
+Also in the end how to get the key with max value
+def Kadanesalgo(num:list[int])->list[int]:
+    n=len(num)
+    numdict={}
+    for i in range(n):
+        for j in range(i+1,n):
+            numdict[tuple(num[i:j+1])]=None# this was needed because we cant add mutable(objects) as keys.
+    #Now to populate the dictionary values with sum
+    for i in numdict:
+        sum=0
+        for j in i:
+            sum+=j
+        numdict[i]=sum
+        
+    print(numdict)
+    #Now to find the key with max value,
+    maxkey=max(numdict, key=numdict.get)#Will return the key with max value
+    print(maxkey)
+tuples can be used as keys in a Python dictionary, but lists cannot. This is because dictionary keys in Python must be immutable and hashable types, and tuples meet these requirements, while lists do not.
+
+Polymorphism basically means that one method or function can be called in different ways.
+There are two main types of polymorphism:
+
+Compile-time polymorphism (Static polymorphism): This is achieved through method overloading or operator overloading. The method to be called is determined at compile time.
+
+Example: Method Overloading, where multiple methods have the same name but different parameter types or counts.
+python
+class Calculator:
+    def add(self, a, b):
+        return a + b
+    
+    def add(self, a, b, c):
+        return a + b + c
+Run-time polymorphism (Dynamic polymorphism): This is achieved through method overriding, where a subclass provides a specific implementation of a method that is already defined in its superclass. The method to be called is determined at runtime.
+
+Example: Method Overriding, where the same method in the parent class is redefined in the child class.
+python
+class Animal:
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+
+# Polymorphism in action
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(animal.sound())
+Output:
+Bark
+Meow
+
+
+Encapsulation is an object-oriented programming (OOP) concept that refers to the bundling of data (variables) and methods (functions) that operate on the data into a single unit or class. It also restricts direct access to the internal state of the object and only allows controlled access through public methods. This ensures that the internal workings of an object are hidden, promoting data integrity and security.
+
+Key Points of Encapsulation:
+Data Hiding: Encapsulation allows the internal details of a class to be hidden from outside classes. External code can only interact with the object through defined methods, not by directly accessing the attributes.
+
+Controlled Access: Encapsulation often involves defining access levels for class members (public, private, or protected). This allows control over which variables or methods can be accessed or modified from outside the class.
+
+Improved Security: By restricting direct access to certain data, encapsulation helps prevent unintended interference and misuse, enhancing the security of the data.
+Public attributes (like name in the example) can be accessed directly.
+Private attributes (like __salary) are not accessible directly from outside the class, but they can be accessed and modified using public getter and setter methods.
+
+
+Abstraction is an object-oriented programming (OOP) concept that involves hiding the complex implementation details of a system and exposing only the essential features or behaviors to the user. It simplifies the interaction with objects by presenting only relevant information, while the internal workings are kept hidden.
+
+Abstract classes are a foundational concept in object-oriented programming (OOP) that allows you to define classes that cannot be instantiated directly. An abstract class can contain abstract methods (methods without implementation) as well as regular methods (with implementation). Subclasses of an abstract class must provide implementations for the abstract methods, making the abstract class a template for future classes.
+from abc import ABC, abstractmethod
+very impppppppportant
+# Abstract class
+class Animal(ABC):
+    
+    # Abstract method (must be implemented by subclasses)
+    @abstractmethod
+    def make_sound(self):
+        pass
+    
+    # Concrete method (optional to override)
+    def sleep(self):
+        return "Sleeping..."
+
+# Subclass of Animal (must implement make_sound)
+class Dog(Animal):
+    def make_sound(self):
+        return "Bark"
+
+# Subclass of Animal (must implement make_sound)
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow"
+
+# You cannot instantiate the abstract class
+# animal = Animal()  # Raises TypeError
+
+# Instantiating subclasses
+dog = Dog()
+cat = Cat()
+
+print(dog.make_sound())  # Output: Bark
+print(cat.make_sound())  # Output: Meow
+print(dog.sleep())       # Output: Sleeping...
+
+
+Abstract Class: The Animal class is abstract and has an abstract method make_sound(), which is not implemented.
+
+Concrete Methods: The Animal class also includes a concrete method sleep(), which can be used by all subclasses without being overridden.
+
+Subclasses: Both Dog and Cat are subclasses of Animal and provide their own implementations of the make_sound() method, as required by the abstract class.
+
+Instantiation: You cannot create an instance of the abstract class Animal directly, but you can instantiate its subclasses.
+
+--------------
+Always solve dynamic or dp problems (recursive ) backward, example step problem
+We always need a base case (the smallest possible case) on which all subsequent values are derived.
+-------------
+in dynamic programming whenever the problem states each thing can be taken any number of times, dont move to the previous index after taking a particular index.

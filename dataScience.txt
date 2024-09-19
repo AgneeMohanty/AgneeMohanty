@@ -1,0 +1,144 @@
+To explain what is data science, draw biggest circle data science,within it ML,within it Deep learning. So basically data science is the study of gaining insights and patterns from data, machine learning is teaching something to machine or making the machine learn the way we humans learn-its of 3 types, supervised, unsupervised, reinforcement, deep learning mimics human neural networks to handle huge data and gain deep insights into data. This is ANN . Both machine learning and deep learning Can also be said as AI as it is similar to human intelligence but artificial.
+import numpy as nm  
+import matplotlib.pyplot as mtp  
+import pandas as pd  
+  
+#importing datasets  
+data_set= pd.read_csv('Dataset.csv')  
+  
+#Extracting Independent Variable  
+x= data_set.iloc[:, :-1].values  
+  
+#Extracting Dependent variable  
+y= data_set.iloc[:, 3].values  
+  
+#handling missing data(Replacing missing data with the mean value)  
+from sklearn.preprocessing import Imputer  
+imputer= Imputer(missing_values ='NaN', strategy='mean', axis = 0)  
+  
+#Fitting imputer object to the independent varibles x.   
+imputerimputer= imputer.fit(x[:, 1:3])  
+  
+#Replacing missing data with the calculated mean value  
+x[:, 1:3]= imputer.transform(x[:, 1:3])  
+  
+#for Country Variable  
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder  
+label_encoder_x= LabelEncoder()  
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])  
+  
+#Encoding for dummy variables  
+onehot_encoder= OneHotEncoder(categorical_features= [0])    
+x= onehot_encoder.fit_transform(x).toarray()  
+  
+#encoding for purchased variable  
+labelencoder_y= LabelEncoder()  
+y= labelencoder_y.fit_transform(y)  
+  
+# Splitting the dataset into training and test set.  
+from sklearn.model_selection import train_test_split  
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=0)  
+  
+#Feature Scaling of datasets  
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)  
+Data Preprocessing
+It involves below steps:
+Getting the dataset
+Importing libraries
+Importing datasets
+Finding Missing Data
+Encoding Categorical Data
+Splitting dataset into training and test set
+Feature Engineering
+Feature scaling
+Dummy variables are those variables which have values 0 or 1. The 1 value gives the presence of that variable in a particular column, and rest variables become 0. With dummy encoding, we will have a number of columns equal to the number of categories.
+
+In our dataset, we have 3 categories so it will produce three columns having 0 and 1 values. For Dummy Encoding, we will use OneHotEncoder class of preprocessing library.
+
+#for Country Variable  
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder  
+label_encoder_x= LabelEncoder()  
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])  
+#Encoding for dummy variables  
+onehot_encoder= OneHotEncoder(categorical_features= [0])    
+x= onehot_encoder.fit_transform(x).toarray() 
+ 
+important->
+For feature scaling, we will import StandardScaler class of sklearn.preprocessing library as:
+
+from sklearn.preprocessing import StandardScaler  
+Now, we will create the object of StandardScaler class for independent variables or features. And then we will fit and transform the training dataset.
+
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+For test dataset, we will directly apply transform() function instead of fit_transform() because it is already done in training set.
+
+x_test= st_x.transform(x_test)  
+ 
+What this will do is suppose one column of train dataset is ranged between 10000 to 50000 and one is from 0 to 3 , it will bring all the values to 0 and 1 range
+similarly search up syntax for normalisation
+
+Feature normalization, also known as data normalization, is a data preprocessing technique that rescales input features so that they have a common range. It's used to improve the performance of machine learning models by ensuring that all features are on a similar scale.
+So basically what normalisation normalises the distribution of data throughout the length of data, so that the data is evenly distributed.
+In future use imputer to handle missing values instead of just random python functions and brute force.
+
+https://www.javatpoint.com/dimensionality-reduction-technique
+https://www.javatpoint.com/t-sne-in-machine-learning
+There are some common methods that are used for cross-validation. These methods are given below:
+Cross-validation is a technique for evaluating ML models by training several ML models on subsets of the available input data and evaluating them on the complementary subset of the data. Use cross-validation to detect overfitting, ie, failing to generalize a pattern.
+Validation Set Approach.So basically what we do in different methods is that divide the test and train subsets from the available training data in different ways and use them to evaluate our model's performance.
+Leave-P-out cross-validation
+Leave one out cross-validation
+K-fold cross-validation
+Stratified k-fold cross-validation
+https://www.javatpoint.com/cross-validation-in-machine-learning
+https://www.javatpoint.com/auc-roc-curve-in-machine-learning
+https://medium.com/analytics-vidhya/machine-learning-metrics-in-simple-terms-d58a9c85f9f6
+https://www.javatpoint.com/regression-analysis-in-machine-learning
+
+
+Regression analysis helps us to understand how the value of the dependent variable is changing corresponding to an independent variable when other independent variables are held fixed. It predicts continuous/real values such as temperature, age, salary, price, etc.
+Classifier problem- classifies into classes, yes or no(has heart disease or not).Predict a class usually,
+Regression problem-Predict some continuous value(sales price prediction).Predict a numerical value usually.
+
+
+https://www.freecodecamp.org/news/8-clustering-algorithms-in-machine-learning-that-all-data-scientists-should-know/
+Pneumonia detection(transfer learning)
+Tech Stack:TensorFlow,CNN(VGG 16)NumPy,,Matplotlib,Python,imageDataGenerator
+ImageDataGenerator
+
+This is a Keras utility that allows for real-time data augmentation. It can apply various transformations to the training data, which helps improve the generalization of the model and reduce overfitting. Augmentation generates new, slightly altered versions of the existing images on-the-fly during training.
+
+The transformations (rescaling, shearing, zooming, flipping) introduce variations in the training data, helping the model generalize better by learning from different versions of the images. This is crucial for preventing overfitting, especially when the dataset is relatively small.
+
+----------------
+It replaces each pixel values by the median values of it’s neighbor pixels. This is the efficient way for remove salt-and-pepper noise.
+https://pyimagesearch.com/2021/04/28/opencv-morphological-operations/
+https://viso.ai/deep-learning/mask-r-cnn/
+
+Accenture
+Databricks
+NVIDIA
+musigma
+affinisys ai
+tiger analytics
+
+Examples of unsupervised-clustering, decision tree,dimensionality reduction
+overfitting-model performs well on train/validation set but cant perform well on test set
+underfitting-model cant even perform well on train set/validation set.
+classification,regression nd supervised unsupervised are two totally independent matters. That is they are not related ,in regression we predict a continuous value not a class for example, price, temperature
+Machine learning timeline
+first Ill do some exploratory data analysis, go through the values, the problem and maybe plot some graphs showing how values are interdependent and how the dependent variable is affected by each each independent variable
+First Ill split the data into train test and validation sets
+Then for each set I will check if there are any missing values and if there are any non numerical(other than int and float) values as models can understand numerical values only
+In this process, i will fill missing values, change categorical values to numerical(label encoder, and onehot encoder)
+(for missing values, we can use various methods, such as looping through the values and filling them one by one,or using Imputer class to impute values(simple imputer strategy mean, median,mode)
+here feature engineering can be done-scaling,removing outliers,dimensionality reduction, feature creation(derived features/new features as per requirement eg age from d.o.b)also normalisation can be done i.e bring all ranges between 0 and 1.
+Then we can decide the model suitable for our data . 
+Hyperparameter tuning is a process where we choose the right set of parameter values for best model performance.(random searchcv ,gridsearch cv)
+We also take 2 or 3 suitable models simultaneously to see which model works best for us.
+
+Then we can use various sklearn metrics such as f1 score, recall, accuracy to check our model's performance.
